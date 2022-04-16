@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default RestaurantCard;
+export default ItemCard;
