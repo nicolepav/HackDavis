@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Button, Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
 
@@ -8,11 +9,10 @@ function HomeScreen ( {navigation} ) {
   return (
     <ScrollView style={styles.scrollView}>
       <Card style={styles.card}>
-      <Card.Title title="Navigate to 'Book' Screen" />
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('SecondScreen')}>
-            Navigate
-          </Button>
+          <TouchableOpacity style={styles.button} mode="contained" onPress={() => navigation.navigate('SecondScreen')}>
+            <Text> CAS LOGIN PLS </Text>
+          </TouchableOpacity>
         </Card.Content>
       </Card>
     </ScrollView>
@@ -28,7 +28,12 @@ const styles = StyleSheet.create({
     width: '90%',
     marginLeft: 'auto',
     marginRight: 'auto'
+  },
+  button: {
+    backgroundColor: "#FFBF1C",
+
   }
+
 });
 
 export default HomeScreen
