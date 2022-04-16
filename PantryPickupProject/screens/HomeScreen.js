@@ -4,11 +4,16 @@ import { Button, Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
 
 
-function HomeScreen () {
+function HomeScreen ( {navigation} ) {
   return (
     <ScrollView style={styles.scrollView}>
       <Card style={styles.card}>
-        <Card.Title title="Home Screen" />
+      <Card.Title title="Navigate to 'Book' Screen" />
+        <Card.Content>
+          <Button mode="contained" onPress={() => navigation.navigate('SecondScreen')}>
+            Navigate
+          </Button>
+        </Card.Content>
       </Card>
     </ScrollView>
   )
