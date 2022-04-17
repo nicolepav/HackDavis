@@ -47,27 +47,48 @@ function Login ( {navigation} ) {
 
 const styles = StyleSheet.create({
     
-    resetView: {
-        padding: 0,
-        margin: 0,
-    },
     container: {
         flex: 1,
         flexDirection: 'column',
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        
     },
 
     image :{
         marginBottom: 40
     },
-    
+    loginWelcome: {
+        fontFamily: 'Montserrat.ttf',
+        fontWeight: '700',
+        fontSize: '32px',
+        lineHeight: '39px',
+        textAlign: 'center',
+        color: "#F7B257",
+        marginBottom: 40,
+    },
+    resetView: {
+        padding: 0,
+        margin: 0,
+    },
     TextInput: {
         height: 50,
         flex: 1,
         padding: 10,
-        marginLeft: 20,
+        width: '80vw',
+        height: '5vh',
+    },
+    input: {
+        height: 40,
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 15,
+        width: '80vw',
+        height: '5vh',
+        color: "#606060",
+        marginTop: 5,
+        marginBottom: 10,
     },
     button: {
         backgroundColor: "#F7B257",
@@ -77,14 +98,7 @@ const styles = StyleSheet.create({
         height: '5vh',
         justifyContent: 'center',
     },
-    loginWelcome: {
-        fontFamily: 'Montserrat-Bold.ttf',
-        fontWeight: 700,
-        fontSize: '32px',
-        lineHeight: '39px',
-        textAlign: 'center',
-        color: "#F7B257",
-    },
+    
     buttonText: {
         fontFamily: 'Montserrat-Bold.ttf',
         fontWeight: 700,
@@ -102,18 +116,9 @@ const styles = StyleSheet.create({
         marginBottom: '0px',
         textAlign: 'left',
         width: '80vw',
-        borderWidth: 1,
+        paddingLeft: 5,
     },
-    input: {
-        height: 40,
-        margin: 12,
-        borderWidth: 1,
-        padding: 10,
-        borderRadius: 15,
-        width: '80vw',
-        height: '5vh',
-        color: "#606060"
-      },
+    
 
      
 });
