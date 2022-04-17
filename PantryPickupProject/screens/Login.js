@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Image, View, Text, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
-import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
+import { vw, vh } from 'react-native-expo-viewport-units';
+import { useFonts, Montserrat_700Bold, Montserrat_400Regular,} from '@expo-google-fonts/montserrat';
 
 
 function Login ( {navigation} ) {
@@ -61,8 +62,7 @@ const styles = StyleSheet.create({
         marginBottom: 40
     },
     loginWelcome: {
-        fontFamily: 'Montserrat.ttf',
-        fontWeight: "700",
+        fontFamily: './assets/fonts/Montserrat-Regular.ttf',
         fontSize: 32,
         lineHeight: 39,
         textAlign: 'center',
@@ -96,20 +96,17 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         borderRadius: 15,
         width: vw(80),
-        height: vh(5),
+        height: vh(7),
         justifyContent: 'center',
     },
-    
     buttonText: {
         fontFamily: 'Montserrat-Bold.ttf',
-        fontWeight: "700",
         fontSize: 20,
-        lineHeight: 16,
-        color: "#FFFFFF"
+        color: "#FFFFFF",
+        textAlign: 'center',
     },
     plainText: {
-        fontFamily: 'Montserrat.ttf',
-        fontWeight: "500",
+        fontFamily: 'Montserrat-Regular',
         fontSize: 14,
         lineHeight: 20,
         color: "#606060",
