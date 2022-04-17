@@ -1,18 +1,19 @@
 import * as React from 'react';
-import { registerRootComponent } from 'expo';
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Provider as PaperProvider } from 'react-native-paper'
 import HomeScreen from './screens/HomeScreen';
 import SecondScreen from './screens/SecondScreen';
 import Login from './screens/Login';
 
+
+
 const Stack = createStackNavigator();
 
 export default function App() {
+
+
   return (
     <NavigationContainer>
        <Stack.Navigator>
