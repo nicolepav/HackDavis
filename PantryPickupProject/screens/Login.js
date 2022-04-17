@@ -10,8 +10,8 @@ function Login ( {navigation} ) {
  
     <View style={styles.container}>
         
-        <Text>
-            Login with UC Davis Email
+        <Text style={styles.loginWelcome}>
+            WELCOME
         </Text>
         <View>
             <TouchableOpacity style={styles.button} mode="contained" onPress={() => navigation.navigate('SecondScreen')}>
@@ -53,7 +53,16 @@ const styles = StyleSheet.create({
         paddingLeft: 40,
         paddingRight: 40,
         borderRadius: 15,
+    },
+    loginWelcome: {
+        fontFamily: 'Montserrat',
+        fontWeight: 700,
+        fontSize: '32px',
+        lineHeight: '39px',
+        textAlign: 'center',
+        color: "#F7B156",
     }
+
      
 });
 
