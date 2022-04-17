@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { registerRootComponent } from 'expo';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -32,10 +33,3 @@ const styles = StyleSheet.create({
   },
 });
 
-// <Stack.Navigator>
-// {/* <Stack.Screen name="Home" component={HomeScreen} />
-// </Stack.Navigator> */}
-
- // <Stack.Navigator>
-      //   <Stack.Screen name="Home" component={HomeScreen} />
-      // </Stack.Navigator>

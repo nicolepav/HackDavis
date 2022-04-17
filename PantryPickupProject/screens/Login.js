@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Image, View, Text, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 
 
 function Login ( {navigation} ) {
@@ -13,7 +14,7 @@ function Login ( {navigation} ) {
         <View style={styles.container}>
             <Image 
                 source={require('../assets/images/pantryLogoBig.png')} 
-                style={{ width: '216px', height: '216px', marginBottom: '50px' }}
+                style={{ width: 216, height: 216, marginBottom: 50 }}
             />
             
             <View style={styles.textWrapper}>
@@ -61,9 +62,9 @@ const styles = StyleSheet.create({
     },
     loginWelcome: {
         fontFamily: 'Montserrat.ttf',
-        fontWeight: '700',
-        fontSize: '32px',
-        lineHeight: '39px',
+        fontWeight: "700",
+        fontSize: 32,
+        lineHeight: 39,
         textAlign: 'center',
         color: "#F7B257",
         marginBottom: 40,
@@ -76,16 +77,16 @@ const styles = StyleSheet.create({
         height: 50,
         flex: 1,
         padding: 10,
-        width: '80vw',
-        height: '5vh',
+        width: vw(80),
+        height: vh(5),
     },
     input: {
         height: 40,
         borderWidth: 1,
         padding: 10,
         borderRadius: 15,
-        width: '80vw',
-        height: '5vh',
+        width: vw(80),
+        height: vh(5),
         color: "#606060",
         marginTop: 5,
         marginBottom: 10,
@@ -94,28 +95,28 @@ const styles = StyleSheet.create({
         backgroundColor: "#F7B257",
         textAlign: 'center',
         borderRadius: 15,
-        width: '80vw',
-        height: '5vh',
+        width: vw(80),
+        height: vh(5),
         justifyContent: 'center',
     },
     
     buttonText: {
         fontFamily: 'Montserrat-Bold.ttf',
-        fontWeight: 700,
-        fontSize: '20px',
-        lineHeight: '16px',
+        fontWeight: "700",
+        fontSize: 20,
+        lineHeight: 16,
         color: "#FFFFFF"
     },
     plainText: {
         fontFamily: 'Montserrat.ttf',
-        fontWeight: 500,
-        fontSize: '14px',
-        lineHeight: '20px',
+        fontWeight: "500",
+        fontSize: 14,
+        lineHeight: 20,
         color: "#606060",
-        marginTop: '20px',
-        marginBottom: '0px',
+        marginTop: 20,
+        marginBottom: 0,
         textAlign: 'left',
-        width: '80vw',
+        width: vw(80),
         paddingLeft: 5,
     },
     
