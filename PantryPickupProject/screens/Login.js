@@ -33,7 +33,7 @@ function Login ( {navigation} ) {
                     style={styles.input}
                     onChangeText={onChangeText}
                 />
-                <TouchableOpacity style={styles.button} mode="contained" onPress={() => navigation.navigate('SecondScreen')}>
+                <TouchableOpacity style={styles.button} mode="contained" onPress={() => navigation.navigate('Main')}>
                     <Text style={styles.buttonText} >
                         CAS LOGIN
                     </Text>

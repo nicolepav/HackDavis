@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import SecondScreen from './screens/SecondScreen';
 import Login from './screens/Login';
+import Tabs from './screens/Tabs';
 
 
 
@@ -19,8 +20,10 @@ export default function App() {
        <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
          <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-         <Stack.Screen name="SecondScreen" component={SecondScreen} />
+         <Stack.Screen name="SecondScreen" component={SecondScreen} screenOptions={{ headerShown: false }} />
+         <Stack.Screen name="Main" component={Tabs} />
        </Stack.Navigator>
+
     </NavigationContainer>
   );
 }
