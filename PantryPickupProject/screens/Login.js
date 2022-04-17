@@ -104,7 +104,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat-Bold.ttf',
         fontWeight: "700",
         fontSize: 20,
-        lineHeight: 16,
         color: "#FFFFFF"
     },
     plainText: {

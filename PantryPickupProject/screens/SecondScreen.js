@@ -2,13 +2,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
+import HorizontalScroll from '../components/HorizontalScroll';
 
 function SecondScreen () {
   return (
     <View style={styles.container}>
-      <Card style={styles.card}>
-        <Card.Title title="This is another Screen" />
-      </Card>
+      {/* <Card style={styles.card}>
+        
+      </Card> */}
+      <Card><HorizontalScroll/></Card>
     </View>
   );
 }
